@@ -1,9 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
-import demo from "./demo";
+import Navigation from "./shared/Navigation";
+import MainRouter from "./shared/MainRouter";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <Navigation />
+        <MainRouter />
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;

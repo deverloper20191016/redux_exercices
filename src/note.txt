@@ -1,0 +1,4 @@
+- Json server
+    + npm install -g json-server
+    + tạo file db.json
+    + json-server --watch db.json
